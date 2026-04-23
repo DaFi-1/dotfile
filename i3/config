@@ -1,0 +1,148 @@
+################################################################################
+#  ▗▄▄▖ ▗▄▖ ▗▖  ▗▖▗▄▄▄▖▗▄▄▄▖ ▗▄▄▖ ▗▄▄▖                                         # 
+# ▐▌   ▐▌ ▐▌▐▛▚▖▐▌▐▌     █  ▐▌   ▐▌                                            # 
+# ▐▌   ▐▌ ▐▌▐▌ ▝▜▌▐▛▀▀▘  █  ▐▌▝▜▌ ▝▀▚▖                                         #
+# ▝▚▄▄▖▝▚▄▞▘▐▌  ▐▌▐▌   ▗▄█▄▖▝▚▄▞▘▗▄▄▞▘                                         #
+#                                                                              #
+################################################################################
+# Define  o tamanho da borda das janelas em pixel
+for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] floating disable 
+for_window [class="Tk"] floating enable
+for_window [class="Gpick"] floating enable
+# rayylib use xprop para capturar a janela que deseja, vai ser o titulo da janela no raylib
+for_window [class="AppNumbers"] floating enable
+for_window [class="google-chrome-stable"] floating enable
+# set workspaces in monitors
+workspace 1 output DP-0
+workspace 2 output DP-0
+workspace 3 output DP-0
+workspace 4 output DP-0
+workspace 5 output DP-0
+workspace 6 output DP-0
+workspace 7 output DP-0
+workspace 8 output DP-0
+workspace 9 output DP-0
+#workspace 0 output DP-1
+workspace 10 output HDMI-0
+################################################################################
+#  ▗▄▄▖ ▗▄▖ ▗▖    ▗▄▖ ▗▄▄▖  ▗▄▄▖ ▗▄▄▖▗▖ ▗▖▗▄▄▄▖▗▖  ▗▖▗▄▄▄▖ ▗▄▄▖                #
+# ▐▌   ▐▌ ▐▌▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌   ▐▌   ▐▌ ▐▌▐▌   ▐▛▚▞▜▌▐▌   ▐▌                   #
+# ▐▌   ▐▌ ▐▌▐▌   ▐▌ ▐▌▐▛▀▚▖ ▝▀▚▖▐▌   ▐▛▀▜▌▐▛▀▀▘▐▌  ▐▌▐▛▀▀▘ ▝▀▚▖                #
+# ▝▚▄▄▖▝▚▄▞▘▐▙▄▄▖▝▚▄▞▘▐▌ ▐▌▗▄▄▞▘▝▚▄▄▖▐▌ ▐▌▐▙▄▄▖▐▌  ▐▌▐▙▄▄▖▗▄▄▞▘                #
+#                                                                              #
+#                                                                              #
+################################################################################
+#gaps inner 10
+#gaps outer 5
+#client.focused #7EA2B4 #7EA2B4 #7EA2B4 #7EA2B4
+#client.focused #005577 #005577 #005577 #005577
+#client.focused #000000 #000000 #000000 #000000 
+client.focused #FFFFFF #FFFFFF #FFFFFF #FFFFFF
+#client.focused #00FF00 #00FF00 #00FF00 #00FF00 
+#client.focused #00CD00 #00CD00 #00CD00 #00CD00 
+#client.focused #c4c4c4 #c4c4c4 #c4c4c4 #c4c4c4
+#client.focused #FF00FF #FF00FF #FF00FF #FF00FF
+#client.focused #9156A8 #9156A8 #9156A8 #9156A8 
+#client.focused #a2957a #a2957a #a2957a #a2957a
+#client.focused #ff0000 #ff0000 #ff0000 #ff0000
+#client.focused #00CC00 #00CC00 #00CC00 #00CC00 
+#client.focused #3E3B36 #3E3B36 #3E3B36 #3E3B36
+#client.unfocused #00CC00 #00CC00 #00CC00 #00CC00 
+#client.unfocused #000000 #000000 #000000 #000000 
+#client.focused_inactive #000000 #000000 #000000 #000000
+#client.unfocused #3E3B36 #3E3B36 #3E3B36 #3E3B36
+#client.focused_inactive #3E3B36 #3E3B36 #3E3B36 #3E3B36
+bar {
+	#output DP-1
+	position top
+	font pango:Terminess Nerd Font 9
+}
+################################################################################
+# ▗▄▄▖ ▗▄▄▄▖▗▖  ▗▖▗▄▄▄  ▗▄▄▖▗▖  ▗▖▗▖  ▗▖                                       #
+# ▐▌ ▐▌  █  ▐▛▚▖▐▌▐▌  █▐▌    ▝▚▞▘ ▐▛▚▖▐▌                                       #
+# ▐▛▀▚▖  █  ▐▌ ▝▜▌▐▌  █ ▝▀▚▖  ▐▌  ▐▌ ▝▜▌                                       #
+# ▐▙▄▞▘▗▄█▄▖▐▌  ▐▌▐▙▄▄▀▗▄▄▞▘  ▐▌  ▐▌  ▐▌                                       #
+#                                                                              #
+################################################################################
+set $mod Mod1
+floating_modifier $mod
+bindsym $mod+o scratchpad show
+bindsym $mod+shift+o move scratchpad
+#bindsym $mod+d exec --no-startup-id $HOME/dotfile/cascade.sh
+bindsym $mod+d exec --no-startup-id /home/a/dotfile/dmenu-5.4/dmenu_run
+bindsym $mod+q kill
+#bindsym $mod+w exec ~/dotfile/st-0.9.3/st 
+bindsym $mod+w exec alacritty 
+bindsym $mod+a workspace prev
+bindsym $mod+s workspace next
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+# split in horizontal orientation
+bindsym $mod+b split h
+# split in vertical orientation
+bindsym $mod+v split v
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+f floating toggle
+# change container layout (stacked, tabbed, toggle split)
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+#bindsym $mod+e layout toggle split
+# Define names for default workspaces for which we configure key bindings later on.
+# We use variables to avoid repeating the names in multiple places.
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+# switch to workspace
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+################################################################################
+#  ▗▄▖ ▗▖ ▗▖▗▄▄▄▖▗▄▖  ▗▄▄▖▗▄▄▄▖▗▄▖ ▗▄▄▖▗▄▄▄▖                                   #
+# ▐▌ ▐▌▐▌ ▐▌  █ ▐▌ ▐▌▐▌     █ ▐▌ ▐▌▐▌ ▐▌ █                                     #
+# ▐▛▀▜▌▐▌ ▐▌  █ ▐▌ ▐▌ ▝▀▚▖  █ ▐▛▀▜▌▐▛▀▚▖ █                                     #  
+# ▐▌ ▐▌▝▚▄▞▘  █ ▝▚▄▞▘▗▄▄▞▘  █ ▐▌ ▐▌▐▌ ▐▌ █                                     # 
+#                                                                              #
+################################################################################
+#exec --no-startup-id xrandr --output DP-0 --mode 1920x1080 --rate 100 --primary --output HDMI-0 --mode 1366x768 --rate 60 --right-of DP-0
+exec --no-startup-id xrandr --output DP-0 --mode 1920x1080 --rate 100 --primary
+exec --no-startup-id xrandr --output HDMI-0 --mode 1366x768 --rate 60 --right-of DP-0
+exec xset r rate 180 250
