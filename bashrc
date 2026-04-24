@@ -59,4 +59,3 @@ else
     #PS1=" - "
     PS1="\$(python_venv) \$(git_branch) - "
 fi
-
