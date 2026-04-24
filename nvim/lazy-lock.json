@@ -1,0 +1,10 @@
+{
+  "bolinhax": { "branch": "main", "commit": "a2c18b587d8edfdb2f8fa6a05828400ba7a7d922" },
+  "lazy.nvim": { "branch": "main", "commit": "85c7ff3711b730b4030d03144f6db6375044ae82" },
+  "markdown-preview.nvim": { "branch": "master", "commit": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee" },
+  "nui.nvim": { "branch": "main", "commit": "de740991c12411b663994b2860f1a4fd0937c130" },
+  "tabindex": { "branch": "main", "commit": "6514bf5769869364cd96a9ed3ea74a9e739eaf39" },
+  "tasknvim": { "branch": "main", "commit": "4b0ad2479f082aca1f442ff5ef2c288af7dde370" },
+  "vimtex": { "branch": "master", "commit": "0f42a5130432d4af2e6fd21fb93a76915ff1f090" },
+  "winhopxx": { "branch": "main", "commit": "fb2c22ae3bd4bc31a14b92d7b03ca9dd3f0628c0" }
+}
